@@ -1,0 +1,125 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+} /*Variaveis para definir as cores pricipais do meu projeto*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*Menu principal e logo*/
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: #ffffff;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header .logo{
+    margin-left: 6px;
+    color: var(--vermelho);
+    font-family: 'Arial black',times;
+    font-size:40px;
+}
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: #fff;
+}
+/*fim*/
+
+/*Filme principal em destaque*/
+.filme-principal{
+    font-size: 17px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),  url('../capa-mortal.jpeg');
+    background-size:cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .discricao{
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #ffffff;
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .7s ease all;
+}
+.botao:hover{
+    background-color:#ffffff ;
+    color: black;
+}
+.botao i{
+    margin-right: 5px;
+}
+.filme-principal .container{
+    width: 50%;
+}
+.container{
+    margin-left: 20px;
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.link{
+    text-decoration: none;
+    color: red;
+}
+.infmk{
+    color: red;
+}
+.ftmk img{
+    width: 40%;
+    height: 50%;
+    
+
+}
+.infcontainer .smk{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*Responsividade*/
+
+@media screen and (max-width:700px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .botao{
+        margin-top: 5px;
+    }
+
+}
+@media screen and (min-width: 1000px){
+    .discricao{
+        width: 50%;
+    }
+}
+.carrosel-filmes{
+    margin-top: 5px;
+}
